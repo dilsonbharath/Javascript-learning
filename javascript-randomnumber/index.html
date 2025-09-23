@@ -1,0 +1,20 @@
+<h1>Welcome to random number game</h1>
+<input type="number" id="num" min="1" max="10" placeholder="Enter a number">
+<button onclick="check()">Check</button>
+<p id="result">Right/Wrong</p>
+
+<script>
+    var random = Math.floor(Math.random() * 10) + 1
+    var res = document.getElementById("result")
+    console.log(random);
+    function check() {
+        var i = document.getElementById("num").value
+        if (i==random) {
+            console.log("Right");
+            res.innerHTML = "Right"
+        } else {
+            console.log("Wrong");
+            res.innerHTML = "Wrong"
+        }
+    }
+</script>
