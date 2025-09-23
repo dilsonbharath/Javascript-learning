@@ -1,0 +1,12 @@
+<button onclick="update()">Add</button>
+<div id="res"></div>
+
+<script>
+    var div = document.getElementById("res");
+    
+    function update(){
+        var newelemnt = document.createElement("h3");
+        newelemnt.textContent= "This is a new element";
+        div.append(newelemnt);
+    }
+</script>
