@@ -1,0 +1,12 @@
+<h1 id="name">
+    My Name
+</h1>
+<button onclick="update(event)">Dilson Bharath</button>
+<button onclick="update(event)">Pradeep Raj</button>
+<button onclick="update(event)">Hari Prasath</button>
+<script>
+    var h1 = document.getElementById("name");
+    function update(event){
+        h1.innerText = event.target.innerText;
+    }
+</script>
