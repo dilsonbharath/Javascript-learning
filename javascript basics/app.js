@@ -4,5 +4,6 @@ function add(){
     var y = a+b
     var x=document.getElementById("result")
     x.innerHTML =  x.innerHTML+" = " + y
+    alert("The sum is " + y)
 }
 add()
