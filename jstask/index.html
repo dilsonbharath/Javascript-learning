@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: lightcyan;">
+    <h1 align="center">Student form</h1>
+    
+    <form>
+    <table border="1" width="400px" align="center" cellpadding="10px" cellspacing="0px">
+        <tr>
+            <td>Name</td>
+            <td><input id="name" type="text" placeholder="Enter Name"></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input id="age" type="number" placeholder="Enter Age"></td>
+        </tr>
+        <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" id="male" name="gender" value="Male" checked> Male
+            <input type="radio" id="female" name="gender" value="Female"> Female
+        </td>
+        </tr>
+        <tr>
+            <td>Course</td>
+            <td><select id="course">
+                <option value="BCA">BCA</option>
+                <option value="MCA">MCA</option>
+                <option value="BTECH">BTECH</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input id="email" type="email" placeholder="Enter Email"></td>
+        </tr>
+        
+        
+        <tr style="background-color: lightgreen;" onclick="add()" type="button">
+            <td colspan="2" align="center" type="reset">
+            Save
+            </td>
+        </tr>
+
+    </table>
+    </form>
+    
+    <br>
+    <table align="center" border="1" width="600px" id="data">
+        <tr style="font-weight: bold;">
+            <td>Name</td>
+            <td>Age</td>
+            <td>Gender</td>
+            <td>Course</td>
+            <td>Email</td>
+            <td>Action</td>
+        </tr>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
